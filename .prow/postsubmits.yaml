@@ -38,8 +38,6 @@ postsubmit:
           securityContext:
             privileged: true
           imagePullPolicy: Always
-
-postsubmit:
   - name: post-bolnica-2-infra-develop-deploy
     labels:
       preset-github-ro-token: "true"
