@@ -35,9 +35,6 @@ presubmits:
               ## push help package
               helm push bolnica-2*.tgz oci://harbor.k8s.elab.rs/bolnica-2
 
-              # update dev helm chart
-              helm upgrade bolnica-2-prod ./kubernetes/bolnica-2 --reuse-values --set git_version_front=$commit_hash -n bolnica-2-prod
-
           securityContext:
             privileged: true
           imagePullPolicy: Always
