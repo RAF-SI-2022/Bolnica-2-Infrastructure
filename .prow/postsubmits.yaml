@@ -1,4 +1,4 @@
-postsubmit:
+postsubmits:
   - name: post-bolnica-2-infra-prod-deploy
     labels:
       preset-github-ro-token: "true"
